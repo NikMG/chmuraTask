@@ -9,18 +9,16 @@
   },
   "test": {
     "username": "root",
-    "password": "root",
+    "password": "456RFVvbn!",
     "database": "tasks_list",
     "host": "localhost",
-    "dialect": "mysql",
-    "port": 8889
+    "dialect": "mysql"
   },
   "production": {
     "username": "root",
-    "password": "root",
+    "password": "456RFVvbn!",
     "database": "tasks_list",
     "host": "localhost",
-    "dialect": "mysql",
-    "port": 8889
+    "dialect": "mysql"
   }
 }
