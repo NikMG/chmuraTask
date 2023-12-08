@@ -17,13 +17,13 @@ const ListComponent = () => {
     }
 
     let fetchTaskList = async () => {
-        const taskList = await axios.get('http://127.0.0.1:3001/tasks');
+        const taskList = await axios.get('http://localhost:3001/api/tasks');
 
         setTasks(taskList.data);
     }
 
     let handleDeleteTask = async (task) => {
-        await axios.delete(`http://127.0.0.1:3001/tasks/delete/${String(task.id)}`);
+        await axios.delete(`http://localhost:3001/api/tasks/delete/${String(task.id)}`);
 
         await fetchTaskList();
     }
