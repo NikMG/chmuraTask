@@ -23,6 +23,8 @@ jobs:
         key: ${{ secrets.SSH_PRIVATE_KEY }}
         port: 22
         script: |
+          eval "$(ssh-agent -s)"
+          ssh-add ~/.ssh/chmura
           cd /var/www/chmuraTask/
           git pull origin main
           git status
