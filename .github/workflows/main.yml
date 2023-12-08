@@ -28,7 +28,7 @@ jobs:
           cd /var/www/chmuraTask/
           git pull origin main
           git status
-          cd /frontend/
+          cd frontend/
           npm install 
           cd ../backend/
           npm install
