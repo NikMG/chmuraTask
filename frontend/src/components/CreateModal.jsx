@@ -10,7 +10,7 @@ const CreateModal = ({ isOpen, setOpen, fetchTasks}) => {
     }
 
     let handleCreate = async () => {
-        await axios.post('http://api.nikmg.weazzylee.me/tasks/create', {
+        await axios.post('https://api.nikmg.weazzylee.me/tasks/create', {
             task: taskInput
         });
 

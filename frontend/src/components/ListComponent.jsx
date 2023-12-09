@@ -17,13 +17,13 @@ const ListComponent = () => {
     }
 
     let fetchTaskList = async () => {
-        const taskList = await axios.get('http://api.nikmg.weazzylee.me/tasks');
+        const taskList = await axios.get('https://api.nikmg.weazzylee.me/tasks');
 
         setTasks(taskList.data);
     }
 
     let handleDeleteTask = async (task) => {
-        await axios.delete(`http://api.nikmg.weazzylee.me/tasks/delete/${String(task.id)}`);
+        await axios.delete(`https://api.nikmg.weazzylee.me/tasks/delete/${String(task.id)}`);
 
         await fetchTaskList();
     }

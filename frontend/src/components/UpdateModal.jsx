@@ -10,7 +10,7 @@ const UpdateModal = ({ isOpen, setOpen, activeTask, fetchTasks }) => {
     }
 
     let handleUpdate = async () => {
-        await axios.put('http://api.nikmg.weazzylee.me/tasks/update', {
+        await axios.put('https://api.nikmg.weazzylee.me/tasks/update', {
             taskId: activeTask.id,
             text: taskInput
         });
