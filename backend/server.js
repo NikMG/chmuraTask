@@ -14,6 +14,6 @@ app.use('/tasks', tasksRouter);
 
 db.sequelize.sync().then(() => {
     app.listen('3001', () => {
-        
+        console.log('enabled');
     });
 });

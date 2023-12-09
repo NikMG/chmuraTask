@@ -10,7 +10,7 @@ const UpdateModal = ({ isOpen, setOpen, activeTask, fetchTasks }) => {
     }
 
     let handleUpdate = async () => {
-        await axios.put('http://127.0.0.1:3001/api/tasks/update', {
+        await axios.put('http://127.0.0.1:3001/tasks/update', {
             taskId: activeTask.id,
             text: taskInput
         });
