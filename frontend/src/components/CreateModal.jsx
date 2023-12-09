@@ -10,7 +10,7 @@ const CreateModal = ({ isOpen, setOpen, fetchTasks}) => {
     }
 
     let handleCreate = async () => {
-        await axios.post('http://127.0.0.1:3001/tasks/create', {
+        await axios.post('http://16.170.231.118:3001/tasks/create', {
             task: taskInput
         });
 
