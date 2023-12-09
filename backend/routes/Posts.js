@@ -27,7 +27,7 @@ router.delete('/delete/:id', async (req, res) => {
     console.log(req);
 
     try {
-        const task = await Posts.findOne({ where: { id: taskId } });
+        const task = await Posts.findOne({ where: { id: parseInt(taskId) } });
 
         if (taks == null) {
             res.status(404).send('Task Not Found');
