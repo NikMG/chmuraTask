@@ -37,7 +37,7 @@ const ListComponent = () => {
             <CreateModal isOpen={isOpenCreateModal} setOpen={setOpenCreateModal} fetchTasks={fetchTaskList}/>
             {activeTask ? <UpdateModal isOpen={isOpenUpdateModal} setOpen={setOpenUpdateModal} activeTask={activeTask} fetchTasks={fetchTaskList} /> : '' }
             <div className="buttons">
-                <span className="create__button button" onClick={() => {setOpenCreateModal(true)}}>Create</span>
+                <span className="create__button button" onClick={() => {setOpenCreateModal(true)}}>Utworz</span>
                 <span className="refresh__button button" onClick={fetchTaskList}>Refresh</span>
             </div>
             <div className="tasks">
